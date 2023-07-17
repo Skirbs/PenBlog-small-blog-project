@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: var(--font-color);
+}
+html {
+  background-color: var(--background-color);
+}
+body {
+  margin: 0;
+}

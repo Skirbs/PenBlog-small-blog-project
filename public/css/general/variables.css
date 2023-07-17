@@ -1,0 +1,18 @@
+:root {
+  --font-color: #e6e5e5;
+  --disabled-font-color: #9e9e9e;
+  --hover-font-color: #bdbdbd;
+  --background-color: #151414;
+  --primary-color: #343437;
+  --secondary-color: #0e0e0e;
+  --accent-color: #737378;
+}
+
+.active-anchor {
+  color: var(--font-color) !important;
+}
+
+.center-content {
+  display: grid;
+  place-items: center;
+}
