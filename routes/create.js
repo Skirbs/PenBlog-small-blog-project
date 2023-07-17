@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/create", (req, res) => {
-  res.render("create");
+  res.render("create", {path: "/create"});
 });
 
 router.post("/create", (req, res) => {

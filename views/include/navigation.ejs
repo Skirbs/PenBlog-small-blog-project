@@ -8,8 +8,8 @@
       </a>
     </div>
     <div class="nav-right-side d-flex justify-content-center align-items-center me-3">
-      <a class="mx-1 px-2 center-content active-anchor" href="/">Home</a>
-      <a class="mx-1 px-2 center-content" href="/">Create</a>
-      <a class="mx-1 px-2 center-content" href="/">Contact Us</a>
+      <a class="mx-1 px-2 center-content <%= path === "/" ? "active-anchor" : null %>" href="/">Home</a>
+      <a class="mx-1 px-2 center-content <%= path === "/create" ? "active-anchor" : null %>" href="/create">Create</a>
+      <a class="mx-1 px-2 center-content <%= path === "/contact" ? "active-anchor" : null %>" href="/contact">Contact Us</a>
     </div>
 </nav>
