@@ -1,0 +1,17 @@
+<%- include("include/head.ejs") %>
+<link rel="stylesheet" href="/css/views css/home.css">  
+</head>
+  <body>
+    <%- include("include/navigation") %>
+    <main class="col-11 mt-2 d-flex flex-column align-items-center">
+      <h1 class="col-12">Your Blogs</h1>
+      <div class="blogs-container col-12 d-flex flex-column align-items-center">
+        <div class="blog-content col-11 p-2">
+            <h2 class="col-12 pb-2"><%= blogTitles[blogCurrentId] %></h2>
+            <p class="col-12"><%= blogDesc[blogCurrentId]%></p>
+          </div>    
+      </div>
+    </main>
+    
+  </body>
+</html>

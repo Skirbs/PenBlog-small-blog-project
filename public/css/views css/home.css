@@ -6,3 +6,16 @@
 .blog-content h2 {
   border-bottom: 1px solid var(--primary-color);
 }
+
+.read-more-button {
+  border: none;
+  background-color: var(--primary-color);
+  box-shadow: 0px 3px 6px 2px var(--shadow-color);
+  transition: 0.1s;
+}
+
+.read-more-button:hover {
+  border: none;
+  background-color: var(--primary-hover-color);
+  box-shadow: 0px 3px 6px 2px var(--shadow-color);
+}
