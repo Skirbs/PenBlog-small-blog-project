@@ -14,7 +14,7 @@ router.post("/create", (req, res) => {
   blogs.blogTitle.push(req.body.blogTitle);
   blogs.blogDesc.push(req.body.blogDesc);
   console.log(blogs);
-  res.redirect("/create");
+  res.redirect("/");
 });
 
 module.exports = {

@@ -5,11 +5,15 @@
     <%- include("include/navigation") %>
     <main class="col-11 mt-2 d-flex flex-column align-items-center">
       <h1 class="col-12">Your Blogs</h1>
-      <div class="blogs-container d-flex flex-column align-items-center">
-        <div class="blog-content col-11 p-2">
-          <h2>Blog Title</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat voluptatibus earum natus vitae ullam voluptatem necessitatibus, nostrum culpa pariatur? Odio saepe ullam itaque ipsum dicta laudantium porro modi accusantium voluptas!... <a href="/">read more</a> </p>
-        </div>
+      <div class="blogs-container col-12 d-flex flex-column align-items-center">
+        <% if(blogData.blogTitle.length === 0){ %>
+          <h2>You have no blogs</h2>
+        <% } else for(let i = 0; i < blogData.blogTitle.length; i++) { %>
+          <div class="blog-content col-11 p-2">
+            <h2 class="col-12 pb-2"><%= blogData.blogTitle[i] %></h2>
+            <p class="col-12"><%= blogData.blogDesc[i]%> <a href="/">read more</a> </p>
+          </div>
+        <% } %>
       </div>
     </main>
     
