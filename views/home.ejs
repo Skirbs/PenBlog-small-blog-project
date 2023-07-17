@@ -11,7 +11,7 @@
         <% } else for(let i = 0; i < blogTitles.length; i++) { %>
           <div class="blog-content mt-3 col-11 p-2">
             <h2 class="col-12 pb-2"><%= blogTitles[i] %></h2>
-            <p class="col-12"><%= shortendBlogDesc[i]%> 
+            <p class="col-12"><%- shortendBlogDesc[i].split(`\r\n`).join("<br>")%> 
               <form action="/blog/<%=blogID[i]%>" method="post"> 
                 <input type="hidden" name="ID" value="<%= blogID[i] %>">
                 <button class="read-more-button" type="submit">Read More</button>

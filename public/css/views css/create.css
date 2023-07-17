@@ -21,6 +21,8 @@ label textarea {
   resize: none;
   outline: none;
   padding: 8px;
+
+  max-height: 40vh;
 }
 
 .title-label {

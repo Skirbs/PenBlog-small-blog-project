@@ -8,7 +8,7 @@
       <div class="blogs-container col-12 d-flex flex-column align-items-center">
         <div class="blog-content col-11 p-2">
             <h2 class="col-12 pb-2"><%= blogTitles[blogCurrentId] %></h2>
-            <p class="col-12"><%= blogDesc[blogCurrentId]%></p>
+            <p class="col-12"><%- blogDesc[blogCurrentId].split(`\r\n`).join("<br>")%></p>
           </div>    
       </div>
     </main>

@@ -14,11 +14,20 @@
         
         <label class="description-label mb-2 d-flex flex-column justify-content-center col-11 mt-2"> 
         <p class="m-0 col-12">Description:</p>
-        <textarea name="blogDesc" placeholder="Write something about your blog..." required></textarea>
+        <textarea oninput="auth_grow(this);" name="blogDesc" placeholder="Write something about your blog..." required></textarea>
         </label>
         
         <button class="mb-2 px-4 py-1" type="submit">Post</button>
       </form>
+
+      <script>
+        function auth_grow(elem){
+          elem.style.height = "auto";
+          elem.style.height = elem.scrollHeight + "px";
+        }
+
+
+      </script>
     </main>
   </body>
 </html>
