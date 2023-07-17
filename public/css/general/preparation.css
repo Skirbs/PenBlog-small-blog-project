@@ -9,5 +9,6 @@ html {
   background-color: var(--background-color);
 }
 body {
+  background-color: transparent !important;
   margin: 0;
 }
