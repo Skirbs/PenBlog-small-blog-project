@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/contact", (req, res) => {
-  res.render("contact", {path: "/contact"});
+  res.render("contact", {title: "Contact", path: "/contact"});
 });
 
 module.exports = {

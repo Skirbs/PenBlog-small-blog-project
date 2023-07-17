@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/404", (req, res) => {
-  res.status(404).render("404", {path: "/404"});
+  res.status(404).render("404", {title: "Not Found", path: "/404"});
 });
 
 router.use("/", (req, res) => {
