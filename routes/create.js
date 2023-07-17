@@ -14,7 +14,6 @@ router.post("/create", (req, res) => {
   blogs.blogTitle.push(req.body.blogTitle);
   blogs.blogDesc.push(req.body.blogDesc);
   blogs.blogID.push(Math.random().toString(36).slice(2, -1));
-  console.log(blogs);
   res.redirect("/");
 });
 

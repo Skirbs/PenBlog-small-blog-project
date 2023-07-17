@@ -8,7 +8,6 @@ const shortenedDesc = [];
 
 router.get("/", (req, res) => {
   const listLength = createData.blogData.blogTitle.length;
-  console.log(createData.blogData.blogTitle.length);
   if (listLength > 0) {
     shortenedDesc.push(externalFunc.shorten(createData.blogData.blogDesc[listLength - 1], 50));
   }
