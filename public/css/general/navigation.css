@@ -21,7 +21,6 @@
   width: 36px;
   aspect-ratio: 1/1;
   object-fit: contain;
-  filter: contrast(0);
 }
 .nav-left-side p {
   font-size: 1.25rem;
